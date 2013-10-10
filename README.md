@@ -13,6 +13,7 @@ First include the script on your page:
 ```html
 <script src="path/to/validation.min.js"></script>
 ```
+Note that validation.js depends on jQuery.
 
 Adding a class of `form-validate` to any `<form>` element will mark it for validation checking.
 By default, all inputs in the form are checked, but you can manually exclude any field by adding a `data-validate` attribute and setting it to `"false"`.
