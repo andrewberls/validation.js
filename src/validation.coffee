@@ -41,7 +41,6 @@ $ ->
       validateFlag   = $field.data('validate')
       shouldValidate = if validateFlag? then validateFlag else true
 
-      # TODO: hook into markIfInvalid ?
       if shouldValidate && !isValid($field)
         errors = true
         $field.addClass(errClass)
