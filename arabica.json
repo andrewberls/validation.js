@@ -1,0 +1,5 @@
+{
+  "paths": [ "src/validation.coffee" ],
+  "out": "validation.min.js",
+  "uglify": false
+}

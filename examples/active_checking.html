@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>validation.js Example</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style type="text/css">
+
+    .field-error { border: 1px solid #ca7674 !important; }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>validation.js Example - Active Checking</h1>
+
+    <p>
+      This is the same as the <a href="basic.html">basic example</a>, but <code>ValidateJS.enableActiveChecking</code> is
+      set to <code>true</code>, meaning fields will be validated on blur.
+    </p>
+  </div>
+
+	<form method="get" action="#" class="form-validate">
+   <label for="Amount">Amount <span>(must be a number)<span></label>
+   <input type="text" placeholder="Amount" data-validate-type="number">
+
+   <label for="Title">Title</label>
+   <input type="text" placeholder="Title">
+
+   <input type="submit" value="Submit" />
+  </form>
+
+  <p class="credits">
+    validation.js example by <a href="http://andrewberls.com/">Andrew Berls</a>.
+  </p>
+
+  <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../validation.min.js"></script>
+  <script type="text/javascript">
+    ValidateJS.enableActiveChecking = true
+  </script>
+</body>
+</html>

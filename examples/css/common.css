@@ -1,0 +1,90 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #404040;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto 30px;
+  width: 730px;
+}
+
+h1, p { text-align: center; }
+
+h1 {
+  font-weight: normal;
+  font-size: 1.7em;
+}
+
+p { line-height: 1.5; }
+
+code,
+pre {
+  color: #393335;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+code {
+  border-radius: 2px;22
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  /*color: #222;*/
+  color: #dd1144; /* red */
+  font-size: 0.8em;
+  padding: 2px 3px;
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+  a:hover { text-decoration: underline; }
+
+form {
+  border: 1px solid #ccc;
+  margin: 20px auto 30px;
+  overflow: auto;
+  padding: 25px 25px 15px;
+  width: 400px;
+}
+
+label {
+  float: left;
+  margin-bottom: 7px;
+}
+  label span {
+    color: #999;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+input {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  font-size: 0.8em;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 100%;
+}
+  input:not([type="submit"]):focus { outline: none; }
+
+input[type="submit"] {
+  background-color: #08c;
+  border: none;
+  color: white;
+}
+  input[type="submit"]:hover {
+    background-color: #0774AB;
+    cursor: pointer;
+  }
+
+
+.credits {
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}

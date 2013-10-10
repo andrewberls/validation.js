@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>validation.js Example</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style type="text/css">
+
+    .field-error { border: 1px solid #ca7674 !important; }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>validation.js Example - Basic</h1>
+
+    <p>
+      This is a simple form with a class of <code>form-validate</code>.
+      If you try to submit with any blank or invalid fields present,
+      a <code>field-error</code> class will be added to each invalid field and the submission will be prevented.
+    </p>
+
+    <p>
+      Click <a href="active_checking.html">here</a> for an example with active checking enabled.
+    </p>
+  </div>
+
+	<form action="#" class="form-validate">
+   <label for="Amount">Amount <span>(must be a number)<span></label>
+   <input type="text" placeholder="Amount" data-validate-type="number">
+
+   <label for="Title">Title</label>
+   <input type="text" placeholder="Title">
+
+   <input type="submit" value="Submit" />
+  </form>
+
+  <p class="credits">
+    validation.js example by <a href="http://andrewberls.com/">Andrew Berls</a>.
+  </p>
+
+  <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../validation.min.js"></script>
+</body>
+</html>
