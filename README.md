@@ -19,15 +19,16 @@ By default, all inputs in the form are checked, but you can manually exclude any
 
 
 ### Customization
-By default, validation.js will add a class of `"field-error"` to any invalid field and `return false` in the case of any errors.
+By default, validation.js will add a class of `field-error` to any invalid field and return false in the case of any errors.
+It is up to the developer to style the `field-error` class as they wish.
 Customization options are exposed through the `ValidateJS` object on the window. Available options are:
 
 ```javascript
-ValidateJS.formClass = "validated-form"          // Default: "form-validate"
+ValidateJS.formClass = "my-validated-form"          // Default: "form-validate"
 
-ValidateJS.errClass = "custom-field-error-class" // Default: "field-error"
+ValidateJS.errClass = "custom-field-error-class"   // Default: "field-error"
 
-ValidateJS.enableActiveChecking = true           // Default: false
+ValidateJS.enableActiveChecking = true             // Default: false
 ```
 
 If active checking is enabled with the `enableActiveChecking` flag, an error class will be added if the field is invalid when it loses focus (hooked to the `blur` event).
@@ -38,7 +39,7 @@ Ordinarily, validation.js only prevents form submissions with blank fields.
 However, basic type checking is possible through the use of the `data-validate-type` attribute. Currently, only the `number` type is
 supported and is used as follows:
 
-```
+```html
 <input type="text" placeholder="Enter amount" data-validate-type="number" />
 ```
 
@@ -48,3 +49,8 @@ Note that the HTML5 `<input type="number">` may also be appropriate, depending o
 * email field validation
 * alert-style error boxes, slide-downs, etc
 * Inline notifications
+
+
+### Contributing
+validation.js is a CoffeeScript project built with [Arabica](http://andrewberls.github.io/arabica/).
+After making changes to the CoffeeScript source, build the project by running `arabica build` and submit a pull request.
