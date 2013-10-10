@@ -5,7 +5,7 @@ Simply add a class of `form-validate` to any form, and validation.js will automa
 By default, it will simply prevent submission if any fields are blank, but it can be configured to perform rudimentary type checking as well.
 
 ### Examples
-The best way to demonstrate is through actual interaction with a form - you can find an example [here](http://fake.com).
+The best way to demonstrate is through actual interaction with a form - you can find an example [here](http://andrewberls.github.io/validation.js/examples/basic.html).
 
 ### Usage
 First include the script on your page:
@@ -31,7 +31,7 @@ ValidateJS.enableActiveChecking = true           // Default: false
 ```
 
 If active checking is enabled with the `enableActiveChecking` flag, an error class will be added if the field is invalid when it loses focus (hooked to the `blur` event).
-You can see an example of active checking enabled [here](http://www.fake.com).
+You can see an example of active checking enabled [here](http://andrewberls.github.io/validation.js/examples/active_checking.html).
 
 ### Type checking
 Ordinarily, validation.js only prevents form submissions with blank fields.
@@ -42,9 +42,9 @@ supported and is used as follows:
 <input type="text" placeholder="Enter amount" data-validate-type="number" />
 ```
 
-Note that the HTML5 `<input type="number">` may also be appropriate, depending on your use case. You can see numeric type checking in action [here](http://fake.com).
+Note that the HTML5 `<input type="number">` may also be appropriate, depending on your use case. See an example of numeric type checking [here](http://andrewberls.github.io/validation.js/examples/basic.html).
 
 ### To Do
-* email validation
+* email field validation
 * alert-style error boxes, slide-downs, etc
 * Inline notifications
