@@ -63,6 +63,10 @@ ValidateJS.addValidator('isTwo', function(input) {
 });
 ```
 
+```html
+<input type="text" placeholder="Enter 2 and only 2" data-validator="isTwo" />
+```
+
 
 ### Optional fields
 
