@@ -25,6 +25,12 @@ pre {
   font-size: 0.9em;
 }
 
+pre {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 7px;
+}
+
 code {
   border-radius: 2px;22
   background-color: #f1f1f1;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>validation.js Example</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style type="text/css">
+
+    .field-error { border: 1px solid #ca7674 !important; }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>validation.js Example - Custom Validators</h1>
+    <p>
+      This is an example of using custom user-defined validator functions.
+      The sample validator here enforces that only the number 2 is a valid input (for very important reasons),
+      and is defined using a name and a validation function that returns <code>true</code> for valid inputs and <code>false</code>
+      for invalid ones.
+    </p>
+
+<pre>
+ValidateJS.addValidator('isTwo', function(input) {
+  return parseInt(input) === 2;
+});
+</pre>
+
+    <p>You can declare an input to use a custom validator using the <code>data-validator</code> attribute:</p>
+
+<pre>
+&lt;input type=&quot;text&quot; name=&quot;magic_number&quot; data-validator=&quot;isTwo&quot;&gt;
+</pre>
+
+
+	<form action="#" class="form-validate" style="margin-top:40px;">
+   <label for="magic_number">Number</label>
+   <input type="text" name="magic_number" placeholder="Enter the number 2" data-validator="isTwo">
+
+   <input type="submit" value="Submit" />
+  </form>
+
+  <p class="credits">
+    validation.js example by <a href="http://andrewberls.com/">Andrew Berls</a>. Project on <a href="https://github.com/andrewberls/validation.js">GitHub</a>.
+  </p>
+
+  <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="../validation.min.js"></script>
+  <script type="text/javascript">
+    ValidateJS.enableActiveChecking = true
+
+    ValidateJS.addValidator('isTwo', function(input) {
+      return parseInt(input) === 2;
+    });
+  </script>
+</body>
+</html>
