@@ -2,7 +2,7 @@
 
 validation.js provides a simple mechanism for preventing form submissions that contain invalid fields on the client side.
 Simply add a class of `form-validate` to any form, and validation.js will automatically check it.
-By default, it will simply prevent submission if any fields are blank, but it can be configured to perform rudimentary type checking as well.
+By default, it will simply prevent submission if any fields are blank, but it can be hooked to the blur event, configured with custom input formats, and more.
 
 ### Examples
 The best way to demonstrate is through actual interaction with a form - you can find an example [here](http://andrewberls.github.io/validation.js/examples/basic.html).
